@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!--
+        Project: E-commerce Website
+        Name: Divyanshu Deep
+        Roll Number: 2401010215
+        Course: B.Tech CSE Core
+        Section: D
+        Date: 12-04-2026
+    -->
+    <meta charset="UTF-8">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>My E-Commerce Store</h1>
+    <button onclick="toggleCart()">
+        🛒 Cart (<span id="cart-count">0</span>)
+    </button>
+</header>
+
+<!-- Product Section -->
+
+<section id="products"></section>
+
+<!-- Cart Section -->
+
+<section id="cart" class="hidden">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button onclick="checkout()">Checkout</button>
+</section>
+
+<!-- Checkout Section -->
+
+<section id="checkout-section" class="hidden">
+    <h2>Checkout</h2>
+    <input type="text" id="name" placeholder="Enter Name" autocomplete="name"><br><br>
+    <textarea id="address" placeholder="Enter Address" autocomplete="street-address"></textarea><br><br>
+    <button onclick="confirmOrder()">Place Order</button>
+    <p id="confirmation"></p>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
